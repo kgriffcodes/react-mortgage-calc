@@ -1,0 +1,62 @@
+{
+  "name": "react100-mortgage-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "parcel public/index.html --open",
+    "build": "npx parcel build public/index.html --no-source-maps",
+    "test": "mocha test/*.spec.js --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanDiegoCodeSchool/react100-mortgage-calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SanDiegoCodeSchool/react100-mortgage-calculator/issues"
+  },
+  "homepage": "https://github.com/SanDiegoCodeSchool/react100-mortgage-calculator#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chai": "^4.3.4",
+    "expect": "^27.0.6",
+    "express": "^4.17.1",
+    "json-loader": "^0.5.7",
+    "lodash": "^4.17.21",
+    "morgan": "^1.10.0",
+    "nightmare": "^3.0.2",
+    "nightmare-react-utils": "^1.0.4",
+    "parcel-bundler": "^1.12.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^1.19.0",
+    "babel-core": "^6.26.3",
+    "chai-as-promised": "^7.1.1",
+    "chai-http": "^4.3.0",
+    "csx": "^10.0.2",
+    "enzyme": "^3.11.0",
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-lodash-fp": "^2.2.0-a1",
+    "eslint-plugin-react": "^7.24.0",
+    "file-loader": "^6.2.0",
+    "less": "^4.1.1",
+    "less-plugin-autoprefix": "^2.0.0",
+    "mocha": "^9.0.3",
+    "react-addons-test-utils": "^15.6.2",
+    "sass": "^1.36.0",
+    "sinon": "^11.1.2",
+    "sinon-chai": "^3.7.0",
+    "url-loader": "^4.1.1"
+  }
+}
