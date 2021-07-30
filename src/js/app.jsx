@@ -14,21 +14,23 @@ export default class App extends React.Component {
     this.calculate = this.calculate.bind(this);
   }
 
-  // calculate({ this.state.balance }, { this.state.rate }, { this.state.term }) {
-  //   const balance = this.state.balance;
-  //   const rate = this.state.rate;
-  //   const term = this.state.term;
-  //   const output = this.state.output;
+  calculate(s) {
+    // const balance = this.state.balance;
+    // const rate = this.state.rate;
+    // const term = this.state.term;
+    // const output = this.state.output;
+    
+    // this.setState({
+    //   output: (balance * ((rate(Math.pow((1 + rate), term)))
+    //    / ((Math.pow((1 + rate), term)) - 1)))
+    // });
+    // console.log(this.state.balance);
+  }
 
-  //   this.setState({
-  //     output: (balance * ((rate(Math.pow((1 + rate), term)))
-  //      / ((Math.pow((1 + rate), term)) - 1)))
-  //   });
-  //   console.log(output);
-  // }
-
-  handleChange = (event) => {
-    const {name, value} = event.target
+  handleChange = (e) => {
+    console.log(e.target);
+    console.log(e.target.name);
+    const {name, value} = e.target;
 
     this.setState({
       [name]: value,
@@ -60,7 +62,7 @@ export default class App extends React.Component {
           <option value='15'>15</option>
           <option value='30'>30</option>
         </select>
-        <button name='submit' className='row' onClick={ this.calculate }>Calculate</button>
+        <button name='submit' className='row' onClick={ this.calculate() }>Calculate</button>
         <div name='output' value={ this.state.output } id='output' className='row' />
       </div>
     );
