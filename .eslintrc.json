@@ -1,12 +1,13 @@
-module.exports = {
+{
     "env": {
         "browser": true,
-        "es2021": true,
+        "es2020": true,
         "node": true
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "airbnb"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -19,5 +20,9 @@ module.exports = {
         "react"
     ],
     "rules": {
+        "jsx-quotes": [2, "prefer-single"],
+        "react/jsx-curly-spacing": [2, "always"],
+        "react/prefer-stateless-function": [0],
+        "comma-dangle": "off"
     }
-};
+}
